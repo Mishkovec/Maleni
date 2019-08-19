@@ -1,0 +1,166 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  max-width: 1920px;
+  background: url("/assets/Слой 1286 копия 3@1X.png") no-repeat;
+  color: white;
+  font-family: 'Roboto' serif;
+}
+
+.btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.btn .rectangle {
+  width: 1.5em;
+  height: 0.2em;
+  background: white;
+  position: absolute;
+  top: 3px;
+  left: -9px;
+}
+
+.btn .triangle {
+  width: 0.5em;
+  height: 0.5em;
+  border: none;
+  border-top: 0.2em solid white;
+  border-right: 0.2em solid white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+
+main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header, .menu, .top_info, .slider_btn, .main_info, .footer, .main_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  width: 15%;
+  height: 2.5em;
+  background: url("/assets/logo_bonbonniere@1X.png") no-repeat;
+  background-size: contain;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 2%;
+}
+
+.top_info .text {
+  width: 20%;
+  margin-left: 6%;
+  margin-top: 13%;
+  font-size: 1em;
+  line-height: 30px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.top_info .feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+}
+
+.top_info .feedback .circle {
+  width: 231px;
+  height: 231px;
+  border-radius: 50%;
+  border: none;
+  background: #EED2C4;
+}
+
+.top_info .feedback .circle .button {
+  width: 231px;
+  height: 231px;
+  border-radius: 50%;
+  color: #CF807B;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid white;
+  background: none;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.top_info .feedback .links {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.top_info .feedback .links a {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.slider_btn .slider_btn_left {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.main_text .img {
+  width: 20%;
+  height: 10em;
+  background: url("/assets/Слой 1286 копия 4@1X.png") no-repeat;
+  background-size: 350%;
+  background-position-x: 50%;
+}
+
+.main_text h1 {
+  width: 55%;
+  font-size: 3em;
+}
+
+.main_text h1 span {
+  font-size: 3em;
+}
+
+.footer {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer .insta_circle {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: #CAA469;
+}
+
+.footer .insta_circle .instagram {
+  width: 3em;
+  height: 3em;
+  background: url("/assets/instagram@1X.png") no-repeat;
+  background-position: 50%;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.footer .insta_name {
+  color: #CAA469;
+  font-size: 1.5em;
+}
+/*# sourceMappingURL=style.css.map */
