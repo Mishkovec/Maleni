@@ -10,7 +10,8 @@ body {
 	max-width: 1920px;
 	margin-left: auto;
     margin-right: auto;
-    background: url('/assets/Слой\ 1286\ копия\ 3@1X.png') no-repeat;
+    background: url('./assets/Слой\ 1286\ копия\ 3@1X.png') no-repeat;
+    background-color: #CF807B;
     color: white;
 }
 .btn {
@@ -49,7 +50,7 @@ main {
     align-self: flex-end;  
     width: 10%;
     height: 2.17em;
-    background: url('/assets/logo_bonbonniere@1X.png') no-repeat;
+    background: url('./assets/logo_bonbonniere@1X.png') no-repeat;
     background-size: contain;
 }
 .menu {
@@ -158,7 +159,7 @@ main {
         height: 9em;
         margin-top: 1%;
         margin-left: 2%;
-        background: url('/assets/Слой\ 1286\ копия\ 4@1X.png') no-repeat;
+        background: url('./assets/Слой\ 1286\ копия\ 4@1X.png') no-repeat;
         background-size: 300%;
         background-position-x: 50%;
     }
@@ -185,7 +186,7 @@ main {
         .instagram {
             width: 3em;
             height: 3em;            
-            background: url('/assets/instagram@1X.png') no-repeat;
+            background: url('./assets/instagram@1X.png') no-repeat;
             background-position: 42%;
             filter: invert(100%);
         }
