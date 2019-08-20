@@ -260,4 +260,10 @@ main {
   color: #CAA469;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 1366px) {
+  body {
+    background-position-x: 50%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
