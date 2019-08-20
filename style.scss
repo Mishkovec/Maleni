@@ -1,17 +1,17 @@
-// @font-face {
-//     font-family: Roboto; /* Имя шрифта */
-//     src: url(/assets/Roboto/Roboto-Bold.ttf); /* Путь к файлу со шрифтом */
-//    }
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+html, body, html * {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
 	margin:0;
     padding:0;
     overflow: hidden;
 	max-width: 1920px;
-	// margin-left: auto;
-    // margin-right: auto;
+	margin-left: auto;
+    margin-right: auto;
     background: url('/assets/Слой\ 1286\ копия\ 3@1X.png') no-repeat;
     color: white;
-    font-family: 'Roboto' serif;
 }
 .btn {
     position: relative;
@@ -21,7 +21,7 @@ body {
         height: 0.2em;
         background: white;
         position: absolute;
-        top: 3px;
+        top: 4px;
         left: -9px;
     }
     .triangle {
@@ -45,16 +45,29 @@ main {
     display: flex;
     justify-content: space-between;
 }
-.logo {
-    width: 15%;
-    height: 2.5em;
+.logo {  
+    align-self: flex-end;  
+    width: 10%;
+    height: 2.17em;
     background: url('/assets/logo_bonbonniere@1X.png') no-repeat;
     background-size: contain;
 }
 .menu {
+    margin-top: 1.5%;
+    margin-left: -42.5%;
     list-style: none;
+    font-size: 0.9em;
     li {
-        margin-left: 2%;
+        margin-right: 7%;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.phone {
+    margin-top: 1.5%;
+    .fas {
+        color: #CAA469;
     }
 }
 .top_info {
@@ -64,17 +77,18 @@ main {
         margin-top: 13%;
         font-size: 1em;
         line-height: 30px;
-        letter-spacing: 10px;
+        letter-spacing: 8px;
         text-transform: uppercase;
     }
     .feedback {
         display: flex;
-        width: 40%;
+        width: 25%;
         .circle {
             width: 231px;
             height: 231px;
             border-radius: 50%;
             border: none;
+            margin-top: 19%;
             background: #EED2C4;
             .button {
                 width: 231px;
@@ -82,16 +96,42 @@ main {
                 border-radius: 50%;
                 color: #CF807B;
                 text-align: center;
-                vertical-align: middle;
+                text-transform: uppercase;
+                font-weight: bold;
+                vertical-align: middle;                
                 border: 2px solid white;
                 background: none;
-                transform: translateX(50px);
+                transform: translate(14px,9px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p {
+                    width: 50%;
+                    transform: translate(12px, -33px);
+                    letter-spacing: 1px;
+                    line-height: 25px;
+                }
+                .btn {
+                    transform: translate(-28px, -16px);
+                    .rectangle {
+                        background-color: #CF807B;
+                    }
+                    .triangle {
+                        border-color: #CF807B;
+                    }
+                }
             }
         }        
-        .links {            
+        .links {             
+            display: flex;                   
             transform: rotate(-90deg);
+            margin-top: 16%;
+            margin-left: 39%;
             a {
                 margin: 0;
+                margin-left: 10%;
+                margin-right: 10%;
                 padding: 0;
                 color: white;
             }
@@ -99,20 +139,35 @@ main {
     }
 }
 .slider_btn {
+    align-items: center; 
+    margin-top: 1%;
+    padding: 1%;
     .slider_btn_left {
+        margin-top: 0.5%;
+        margin-left: 0.5%;
         transform: rotate(180deg);
+    }
+    .slider_btn_right {
+        margin-top: -1%;
+        margin-right: 0.5%;
     }
 }
 .main_text {
     .img {
         width: 20%;
-        height: 10em;
+        height: 9em;
+        margin-top: 1%;
+        margin-left: 2%;
         background: url('/assets/Слой\ 1286\ копия\ 4@1X.png') no-repeat;
-        background-size: 350%;
+        background-size: 300%;
         background-position-x: 50%;
     }
     h1 {
         width: 55%;
+        margin: 0;
+        margin-top: -2%;
+        margin-right: -11%;
+        line-height: 90px;
         font-size: 3em;
         span {
             font-size: 3em;
@@ -120,22 +175,30 @@ main {
     }
 }
 .footer {
+    margin-top: 1%;
     justify-content: flex-start;
     .insta_circle {
-        width: 3em;
-        height: 3em;
+        width: 2.7em;
+        height: 2.7em;
         border-radius: 50%;
         background-color: #CAA469;
         .instagram {
             width: 3em;
             height: 3em;            
             background: url('/assets/instagram@1X.png') no-repeat;
-            background-position: 50%;
+            background-position: 42%;
             filter: invert(100%);
         }
     }
     .insta_name {
         color: #CAA469;
-        font-size: 1.5em;
+        font-size: 1em;
+        letter-spacing: 4px;
+        margin-top: 1%;
+        margin-left: 2%;
+        a {           
+            color: #CAA469; 
+            text-decoration: none;
+        }
     }
 }
