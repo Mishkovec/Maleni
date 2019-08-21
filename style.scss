@@ -6,7 +6,7 @@ html, body, html * {
 body {
 	margin:0;
     padding:0;
-    overflow: hidden;
+    overflow-x: hidden;
 	max-width: 1920px;
 	margin-left: auto;
     margin-right: auto;
@@ -202,9 +202,137 @@ main {
             text-decoration: none;
         }
     }
+    .footer_menu {
+        display: none;
+        list-style: none;
+        font-size: 0.9em;
+        li {
+            margin-top: 1%;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
-@media only screen and (max-width:1366px){
+@media only screen and (max-width:1280px){
+    .main_text {        
+        h1 {
+            margin-right: 0%;            
+        }
+    } 
+}
+@media only screen and (max-width:1050px){
     body{
-        background-position-x: 50%;
+        background-position-x: 50%; 
+        background-attachment: fixed;       
+    }
+    .header {
+        .menu {
+            margin-left: -20%;
+        }
+    }
+    .top_info {
+        flex-direction: column;
+        .feedback {
+            width: 95%;
+            flex-direction: column;
+            justify-content: flex-start;
+            .circle {
+                margin: 5%;
+            }
+            .links {
+                margin: 0;
+                transform: none;
+            }
+        }
+    }
+    .slider_btn {
+        padding: 10%;
+    }
+    .main_text {
+        justify-content: space-around;
+        h1 {
+            margin-left: 1%;
+            span {
+                font-size: 2.2em;
+            }
+        }
+    }
+}
+@media only screen and (max-width:980px){
+    .main_text {
+        justify-content: space-around;
+        h1 {
+            margin-left: -10%;
+            span {
+                font-size: 2em;
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){    
+    .header {
+        .logo {
+            width: 20%;
+        }
+        .menu {
+            display: none;
+        }
+    }
+    .main_text {
+        .img {
+            display: none;
+        }
+        h1 {
+            width: 85%;
+            margin-left: 0;
+            span {
+                font-size: 3em;
+            }            
+        }
+    }
+    .footer {
+        .footer_menu {
+            display: block;
+        }
+    }
+}
+@media only screen and (max-width:680px){
+    .main_text {        
+        h1 {
+            span {
+                font-size: 2em;
+            }            
+        }
+    } 
+}
+@media only screen and (max-width:480px){
+    .main_text {        
+        h1 {
+            font-size: 2em; 
+            span {
+                font-size: 2.3em;
+            }            
+        }
+    } 
+}
+@media only screen and (max-width:375px){
+    .header {
+        .logo {
+            width: 30%;
+        }
+    }
+    .main_text {        
+        h1 {
+            font-size: 1.5em; 
+            span {
+                font-size: 2.5em;
+            }            
+        }
+    } 
+    .footer {
+        .insta_circle, .insta_name {
+            display: none;
+        }
     }
 }
